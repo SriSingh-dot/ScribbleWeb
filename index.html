@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ScribbleWeb | Home</title>
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet" />
   <style>
     body {
       margin: 0;
@@ -16,25 +16,57 @@
       background: url("walli1.jpg") no-repeat center center fixed;
       background-size: cover;
       color: #ffffff;
-      border: 6px double #ffffff;
-      margin: 40px;
-      box-sizing: border-box; 
-
+      box-sizing: border-box;
+      position: relative;
     }
 
-   h1 {
-  font-family: 'Great Vibes', cursive;
-  font-size: 8rem;
-  margin: 0 0 50px 0;
-  position: relative;
-  color: #ffffff;
-  text-shadow: 0px 0px 15px #ffffffcc; 
-  transition: transform 0.3s ease-in-out;
-}
+    img.decor {
+      position: absolute;
+      pointer-events: none;
+      z-index: 5;
+      filter: invert(100%);
+    }
+
+    .top-border {
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 3px;
+    }
+
+    .bottom-border {
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      transform: rotate(180deg);
+    }
+
+    .corner {
+      width: 160px;
+      height: 160px;
+    }
+
+    .top-left { top: 0; right: 0; }
+    .top-right { top: 0; left: 0; transform: scaleX(-1); }
+    .bottom-left { bottom: 0; right: 0; transform: scaleY(-1); }
+    .bottom-right { bottom: 0; left: 0; transform: scale(-1, -1); }
+
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 8rem;
+      margin: 0 0 50px 0;
+      color: #ffffff;
+      text-shadow: 0px 0px 15px #ffffffcc;
+      position: relative;
+      z-index: 10;
+    }
 
     .buttons {
       display: flex;
       gap: 20px;
+      position: relative;
+      z-index: 10;
     }
 
     .buttons a {
@@ -42,7 +74,6 @@
       font-size: 1.8rem;
       background: hwb(250 6% 62%);
       padding: 14px 36px;
-      border: none;
       border-radius: 10px;
       color: white;
       font-family: Arial, sans-serif;
@@ -57,6 +88,13 @@
   </style>
 </head>
 <body>
+  <img src="topborder.svg" class="decor top-border" alt="Top border" />
+  <img src="topborder.svg" class="decor bottom-border" alt="Bottom border" />
+  <img src="cornerborder.svg" class="decor corner top-left" alt="Corner border" />
+  <img src="cornerborder.svg" class="decor corner top-right" alt="Corner border" />
+  <img src="cornerborder.svg" class="decor corner bottom-left" alt="Corner border" />
+  <img src="cornerborder.svg" class="decor corner bottom-right" alt="Corner border" />
+
   <h1>ScribbleWeb</h1>
   <div class="buttons">
     <a href="canvas1.html">Draw</a>
@@ -64,3 +102,4 @@
   </div>
 </body>
 </html>
+<!--for some reason my bottom and top border is not visible...-->
