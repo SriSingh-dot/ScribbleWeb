@@ -65,29 +65,37 @@
       margin: 0;
     }
    
+  footer {
+    background-color: hwb(0 14% 76%);
+    color: #EEE6CA;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 1.5rem;
+    font-family: 'Great Vibes', cursive;
+    border-top: 5px solid #C1856D;
+    border-bottom: 5px solid #C1856D;
+    box-shadow: inset 0 0 0 3px #C1856D;
+  }
 
-   footer {
-  text-align: center;
-  padding: 15px;
-  background-color: #2E1C1C; /* deeper shade of your background */
-  border-top: 3px double #F5DAA7;
-  font-family: 'Great Vibes', cursive;
-  color: #F5DAA7;
-  font-size: 1.8rem;
-  letter-spacing: 1px;
-}
+  footer a {
+    color: #EEE6CA;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+  }
 
-footer a {
-  color: #F5DAA7;
-  text-decoration: none;
-  margin: 0 12px;
-  transition: color 0.3s ease;
-}
+  footer a:hover {
+    text-decoration: underline;
+  }
 
-footer a:hover {
-  color: #E1E9C9;
-  text-shadow: 0 0 5px #E1E9C9;
-}
+  .icon {
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+</style>
+
 
 </style>
 
@@ -97,7 +105,6 @@ footer a:hover {
 
   <div class="first-page">
     <h1>Miniature Paintings</h1>
-    <img src="smiling.svg" alt="Smiling Icon">
   </div>
 
   <section>
@@ -227,11 +234,14 @@ footer a:hover {
 
 <footer>
   <p>
-    <a href="Rpaint.html">Paintings</a> |
-    <a href="index.html">Home</a>
+    <a href="Rpaint.html">
+      <img src="painting.svg" alt="Paintings Icon" class="icon"> Paintings
+    </a> |
+    <a href="index.html">
+      <img src="home.svg" alt="Home Icon" class="icon"> Home
+    </a>
   </p>
 </footer>
-
 
 
   </body>
