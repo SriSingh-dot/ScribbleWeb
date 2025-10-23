@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ScribbleWeb | Home</title>
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
@@ -13,38 +13,17 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      background: url("walli1.jpg") no-repeat center center fixed;
-      background-size: cover;
-      color: #ffffff;
-      box-sizing: border-box;
+      background: url("walli1.jpg") center/cover fixed;
       position: relative;
     }
 
-    img.decor {
-      position: absolute;
-      pointer-events: none;
-      z-index: 5;
-      filter: invert(100%);
-    }
-
-    .top-border {
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 3px;
-    }
-
-    .bottom-border {
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 3px;
-      transform: rotate(180deg);
-    }
-
     .corner {
+      position: absolute;
       width: 160px;
       height: 160px;
+      pointer-events: none;
+      z-index: 5;
+      filter: invert(25%) sepia(80%) saturate(300%) hue-rotate(90deg) brightness(0.6);
     }
 
     .top-left { top: 0; right: 0; }
@@ -53,47 +32,45 @@
     .bottom-right { bottom: 0; left: 0; transform: scale(-1, -1); }
 
     h1 {
-      font-family: 'Great Vibes', cursive;
+      font-family: 'Parisienne', cursive;
       font-size: 8rem;
-      margin: 0 0 50px 0;
-      color: #ffffff;
-      text-shadow: 0px 0px 15px #ffffffcc;
-      position: relative;
+      margin-bottom: 50px;
+      color: hwb(110 8% 76%);
+      text-shadow: 0 0 15px hsl(0, 0%, 100%);
       z-index: 10;
+      position: relative;
     }
 
     .buttons {
       display: flex;
       gap: 20px;
-      position: relative;
       z-index: 10;
+      position: relative;
     }
 
     .buttons a {
       text-decoration: none;
       font-size: 1.8rem;
-      background: hwb(250 6% 62%);
+      background: #1e551ee6;
       padding: 14px 36px;
       border-radius: 10px;
-      color: white;
+      color: hsl(47, 74%, 85%);
       font-family: Arial, sans-serif;
       font-weight: bold;
       transition: 0.3s;
     }
 
     .buttons a:hover {
-      background: hwb(0 100% 0%);
-      color: #000;
+      background: #EEE6CA;
+      color: #37353E;
     }
   </style>
 </head>
 <body>
-  <img src="topborder.svg" class="decor top-border" alt="Top border" />
-  <img src="topborder.svg" class="decor bottom-border" alt="Bottom border" />
-  <img src="cornerborder.svg" class="decor corner top-left" alt="Corner border" />
-  <img src="cornerborder.svg" class="decor corner top-right" alt="Corner border" />
-  <img src="cornerborder.svg" class="decor corner bottom-left" alt="Corner border" />
-  <img src="cornerborder.svg" class="decor corner bottom-right" alt="Corner border" />
+  <img src="cornerborder.svg" class="corner top-left">
+  <img src="cornerborder.svg" class="corner top-right">
+  <img src="cornerborder.svg" class="corner bottom-left">
+  <img src="cornerborder.svg" class="corner bottom-right">
 
   <h1>ScribbleWeb</h1>
   <div class="buttons">
@@ -102,4 +79,12 @@
   </div>
 </body>
 </html>
+
+
 <!--for some reason my bottom and top border is not visible.. so please ignore it.-->
+<!--removed the top border svg cause it was just pain in my HEAD-->
+<!--changed the color of svg...no one told me that this would be hard. on googling there were many ways but none were working idk why-->
+<!--small fixes to fit in theme---- yes after all this time i finally chose a theme-->
+
+
+<!--fully updated-->
