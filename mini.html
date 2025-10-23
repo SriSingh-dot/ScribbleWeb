@@ -1,116 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rajasthani Paintings</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Miniature Paintings</title>
+  <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: "Brush Script MT", cursive;
+      font-size: 20 rem;
+      line-height: 2;
+      background-color: lch(22.77% 17.76 167.08);
+      color: #EEE6CA;
+    }
 
+    .container {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      border: 12px double #C1856D;
+      box-sizing: border-box;
+      padding: 40px;
+    }
 
+    .first-page {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
 
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Dancing+Script:wght@500&display=swap');
+    .first-page h1 {
+      font-family: 'Allura', cursive;
+      font-size: 10rem;
+      color: hwb(11 45% 35%);
+      text-shadow: 0 0 15px hsl(155, 39%, 23%), 0 0 25px #000000;
+      margin: 0;
+      text-align: center;
+      letter-spacing: 2px;
+    }
 
-  body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #706D54;
-    color: #DBDBDB;
-  }
+    .first-page img {
+      width: 100px;
+      height: auto;
+      margin-top: 20px;
+    }
 
-  .first-page {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 12px double #A08963;
-    box-sizing: border-box;
-    padding: 40px;
-  }
+    section {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 60px 40px;
+      gap: 20px;
+      border-bottom: 2px solid #C1856D;
+    }
 
-  .first-page h1 {
-    font-family: 'Great Vibes', 'Dancing Script', cursive;
-    font-size: 8rem;
-    color: #A08963;
-    text-shadow: 0 0 15px #DBDBDB, 0 0 25px #DBDBDB;
-    margin: 0 0 20px 0;
-    text-align: center;
-    letter-spacing: 1.5px;
-  }
+    section h2 {
+      font-family: 'Allura', cursive;
+      font-size: 5rem;
+      color: hwb(12 46% 29%);
+      text-shadow: 0 0 10px hwb(155 15% 68%), 0 0 20px hwb(0 0% 100%);
+      margin: 0 0 20px 0;
+      text-align: center;
+      width: 100%;
+      letter-spacing: 1px;
+    }
 
-  .first-page img {
-    width: 100px;
-    height: auto;
-    margin-top: 20px;
-  }
+    section p {
+      font-size: 1.5rem;
+      line-height: 1.8;
+      text-align: left;
+      margin: 0;
+    }
 
-section {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 60px 40px;
-  gap: 20px;
-  border-bottom: 2px solid #A08963;
-}
+    footer {
+      background-color: hsl(0, 14%, 33%);
+      color: #EEE6CA;
+      text-align: center;
+      padding: 15px 0;
+      font-size: 1.5rem;
+      font-family: 'Allura', cursive;
+      border-top: 5px solid #C1856D;
+      border-bottom: 5px solid #C1856D;
+      box-shadow: inset 0 0 0 3px #C1856D;
+    }
 
-  section h2 {
-    font-family: 'Great Vibes', 'Dancing Script', cursive;
-    font-size: 5rem;
-    color: #A08963;
-    text-shadow: 0 0 10px #DBDBDB, 0 0 20px #DBDBDB;
-    margin: 0 0 20px 0;
-    text-align: center;
-    width: 100%;
-    letter-spacing: 1px;
-  }
+    footer a {
+      color: #EEE6CA;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
 
-  section p {
-    font-size: 1.5rem;
-    line-height: 1.8;
-    text-align: left;
-    margin: 0;
-  }
+    footer a:hover {
+      text-decoration: underline;
+    }
 
-  footer {
-    background-color: #5E5B45;
-    color: #DBDBDB;
-    text-align: center;
-    padding: 15px 0;
-    font-size: 1.5rem;
-    font-family: 'Great Vibes', cursive;
-    border-top: 5px solid #A08963;
-    border-bottom: 5px solid #A08963;
-    box-shadow: inset 0 0 0 3px #A08963;
-  }
-
-  footer a {
-    color: #DBDBDB;
-    text-decoration: none;
-    margin: 0 15px;
-    font-weight: bold;
-  }
-
-  footer a:hover {
-    text-decoration: underline;
-  }
-
-  .icon {
-    width: 25px;
-    height: 25px;
-    vertical-align: middle;
-    margin-right: 5px;
-  }
-</style>
-
-
-
+    .icon {
+      width: 25px;
+      height: 25px;
+      vertical-align: middle;
+      margin-right: 5px;
+    }
+  </style>
 </head>
 <body>
-
-  <div class="first-page">
-    <h1>Miniature Paintings</h1>
-  </div>
+  <div class="container">
+    <div class="first-page">
+      <h1>Miniature Painting</h1>
+    </div>
 
   <section>
     <h2>History of Miniature Painting</h2>
@@ -119,21 +121,22 @@ section {
 
   <section>
     <h2>Pala School</h2>
-    <p>Ellara and Ajanta were the great centres of Buddhism leaning and art .These schools saw greatest piece of art as murals and frescoes <!--add meaning-->. After this people witnessed a great phase of Buddhism and Buddhism art in India.For real I saw like 100 paintings and sculptures only on Gautam Buddha in the museum. Earlier a large number of manuscript on palm leaves related to Buddhism were written and also illustrated with with buddhist deities .</p>
-    <p>The Pala paintings got the name from the Kings Dharam Pal and Dev Pal while their chief artists were Dhiman and his son Vittapal. That reflects and resembles the feelings of classical art of Ajanta. Paintings were of graceful figures and simple composition giving a calming aura. One of the typical Buddhist palm-leaf manuscript which was illustrated in Pala is Astasahasrika Prajnaparamita <!--add meaning-->. It is a manuscript of Mahayana Buddhism and also written in eight thousand lines. The writings were done after leaving some space in the middle for fitting paintings and thereafter the script was sent to painters for illustrations. All the script were binded together with a thread running through two holes made on both side of the folios. But they were damaged over the years as vermillon and sandal paste was smeared on them as they were sacred.</p>
+    <p>Ellara and Ajanta were the great centres of Buddhism leaning and art .These schools saw greatest piece of art as murals and <a href="meaning.html" style="text-decoration: underline; color: inherit;">frescoes </a>. After this people witnessed a great phase of Buddhism and Buddhism art in India.For real I saw like 100 paintings and sculptures only on Gautam Buddha in the museum. Earlier a large number of manuscript on palm leaves related to Buddhism were written and also illustrated with with buddhist deities .</p>
+    <p>The Pala paintings got the name from the Kings Dharam Pal and Dev Pal while their chief artists were Dhiman and his son Vittapal. That reflects and resembles the feelings of classical art of Ajanta. Paintings were of graceful figures and simple composition giving a calming aura. One of the typical Buddhist palm-leaf manuscript which was illustrated in Pala is Astasahasrika <a href="meaning.html" style="text-decoration: underline; color: inherit;">Prajnaparamita</a>. It is a manuscript of Mahayana Buddhism and also written in eight thousand lines. The writings were done after leaving some space in the middle for fitting paintings and thereafter the script was sent to painters for illustrations. All the script were binded together with a thread running through two holes made on both side of the folios. But they were damaged over the years as vermillon and sandal paste was smeared on them as they were sacred.</p>
     <p>Not soon after Pala art came to a sudden end after the destruction of monestaries by the invaders of the country in the first half of the thirteenth century. some of the monks and artist fled to Nepal during this time which helped in strenghthning of the existing art traditions there.</p>
   
   </section>
 
   <section>
     <h2>Western School</h2>
-    <p>The motivating force for the artistic Western India was Jainism that was patronised by the King of Chalukya Dynasty who ruled Gujrat,Malwa and parts of Rajasthan.Example of one of the oldest painting of this school is Rishabnath <!--meaning to be added--> .Twenty four Tirthankars were painted in  these manuscript which are all now available in in the jain bhandaras <!--meaning-library-->.The illustrations are very unnique with bold elegant features.One find in this style is the exaggeration of physical traits of a person, for instance, eyes,hips and breasts are enlarged. The figures are drawn flat with simple flat colours.After the palm-leaf use from 1100 to 1400 A.D ,later paper were used for the manuscript. There were two famous and influential manuscript Jain text that were repeated and illustrated .Those scripts are :-(a) The Kalpasutra <!--add meaning The Book of Ritual--> (b) The Kalakacharya-Katha <!--add meaning--> </p>
+    <p>The motivating force for the artistic Western India was Jainism that was patronised by the King of Chalukya Dynasty who ruled Gujrat,Malwa and parts of Rajasthan.Example of one of the oldest painting of this school is <a href="meaning.html" style="text-decoration: underline; color: inherit;"> Rishabnath </a> .Twenty four Tirthankars were painted in  these manuscript which are all now available in in the jain <a href="meaning.html" style="text-decoration: underline; color: inherit;">bhandaras </a>.The illustrations are very unnique with bold elegant features.One find in this style is the exaggeration of physical traits of a person, for instance, eyes,hips and breasts are enlarged. The figures are drawn flat with simple flat colours.After the palm-leaf use from 1100 to 1400 A.D ,later paper were used for the manuscript. There were two famous and influential manuscript Jain text that were repeated and illustrated .Those scripts are :-(a) The Kalpasutra  (b) The <a href="meaning.html" style="text-decoration: underline; color: inherit;">Kalakacharya-Katha</a> </p>
 </section>
 <section>
   <h2>Schools of Central India</h2>
-  <p>The initial phase of miniature/manuscript in central India was marked by the Kalpa-Sutra<!--meaning--> illustrations of Mandu (Malwa region of Madhya Pradesh) in as early as the 11th-12th century.</p>
+  <p>The initial phase of miniature/manuscript in central India was marked by the <a href="meaning.html" style="text-decoration: underline; color: inherit;">Kalpa-Sutra</a>
+ illustrations of Mandu (Malwa region of Madhya Pradesh) in as early as the 11th-12th century.</p>
 <!--photo-->
-<p>Mandu was the place inluenced by art from every direction just becasue of being in Central India.For example- Jain manuscript of Gujrat,Muslim elements of Jaunpur etc. In 15th century, Mandu was ruled by the Khaliji Dynasty under which the art schools were greatly influenced by persian art style. This could be seen in Nimat-Nama <!--meaing--> . Later during the rule of Sultan Baz Bahadur, there was an inclination for romantic and secular themes. That's when Ragmala <!--add meaning-->series, Laur Chanda and etc became subjects. We an easily conclude that the art of central India strated primary with the the influence of Gujrat but further it got developed with wide ranging influence over time.Some of the special features were large protruding eyes, angular faces, men and women of moderate height and usage of plenty of motifs on clothes and large amount of gold color. </p>
+<p>Mandu was the place inluenced by art from every direction just becasue of being in Central India.For example- Jain manuscript of Gujrat,Muslim elements of Jaunpur etc. In 15th century, Mandu was ruled by the Khaliji Dynasty under which the art schools were greatly influenced by persian art style. This could be seen in <a href="meaning.html" style="text-decoration: underline; color: inherit;">Nimat-Nama </a> . Later during the rule of Sultan Baz Bahadur, there was an inclination for romantic and secular themes. That's when <a href="meaning.html" style="text-decoration: underline; color: inherit;">Ragmala </a>series, Laur Chanda and etc became subjects. We an easily conclude that the art of central India strated primary with the the influence of Gujrat but further it got developed with wide ranging influence over time.Some of the special features were large protruding eyes, angular faces, men and women of moderate height and usage of plenty of motifs on clothes and large amount of gold color. </p>
 <p>The main feature is their frequent continuous narration through their paintings in different compartments.The artists are also excellent in execution of the theme, color scheme and accuracy of even minute details. Some other features of Malwa miniature were the usage of bright colours, blend of folk elements and highly charged faces. Artists took shelter in Mewar,Rajasthan where great miniature art dveloped seperated when muslim rulers took over the central region.The fountain head of Miniature schools in India was made Central School.</p>
 
 
@@ -142,8 +145,8 @@ section {
 <section>
 <h2>Characteristic Features of Pala School</h2>
 <p>1. Lines were thin and very delicate (flowing and graceful).<br>
-2. Colors were in subdued<!--meaning--> tone and were minimal.<br>
-3. Figures in the paintings have grace and treatment like Ajanta. <!--meaning--><br>
+2. Colors were in <a href="meaning.html" style="text-decoration: underline; color: inherit;">subdued</a> tone and were minimal.<br>
+3. Figures in the paintings have grace and treatment like <a href="meaning.html" style="text-decoration: underline; color: inherit;"> Ajanta</a>. <br>
 4. Around the main features,arches are made.<br>
 5. The borders were simple,plain and well decorated.<br>
 6. Transperency of fabrics like odhinis over the head of heroines and draped with stiff and standing edges.<br>
@@ -166,15 +169,15 @@ section {
   <h2>Rajasthan School Of Painting</h2>
   <p><b><u>GEOGRAPHICAL SITUATION :-</u></b>Rajasthan is the state surrounded by Pakistan,Punjab,Haryana,Madhya Pradesh,Uttar Pradesh as well as Gujrat. Rajasthan has it's own meaning ,place of Kings (Rajas) or maybe place of Kingdoms (Rajyas) as Rajasthan in early times was famous for many kings and kingdoms.Rajasthani Art was never a new school art ,but it is actually the purified and refined form of the traditional form of Indian art whih was all developed in India, Gujrat as well as Mewar.The artists from central India shifted to Rajasthan enhancing the traditional miniature art too.Rajasthan schhol of art is also called Rajasthani schools or Hindu school of art. The art in Rajasthan was solely based on Hindi literature, Music, Poetry, Rag and Raginis etc.</p>
   <p><b><u>ORIGIN AND DEVELOPMENT OF RAJASTHAN ART :-</u></b>Rajasthani art or what we could say Hindu art did not originate as miniature painting initially but it was primarily mural art. The art was developed over the years under the rule of Rajput kings so it is called Rajput Art. Under the rule of Rajputs, the art was influenced mainly from Romance and general folk themes.</p>
-  <p>There were two major factors due to which Rajasthani Art flourished. :- firstly,the economin prosperity of commercial community started to encourage literature,music and arts.Secondly,the revival of vaishnavism <!--add meaning--> and Bhakti cult against caste sysytem which was against Hinduism.  </p>
-  <p>Mewar played an important role in the development of Rajasthani School of Art.Mewar is the mixture of Gujrat and Jain School along with Indian Traditional Art.But Rajasthani art is the pure form of Indian Art.Even today, love scenes of Radha-Krishna are very famous and popular of Nathdwara <!--add meaning-->Paintings.</p>
+  <p>There were two major factors due to which Rajasthani Art flourished. :- firstly,the economin prosperity of commercial community started to encourage literature,music and arts.Secondly,the revival of <a href="meaning.html" style="text-decoration: underline; color: inherit;"> vaishnavism </a> and Bhakti cult against caste sysytem which was against Hinduism.  </p>
+  <p>Mewar played an important role in the development of Rajasthani School of Art.Mewar is the mixture of Gujrat and Jain School along with Indian Traditional Art.But Rajasthani art is the pure form of Indian Art.Even today, love scenes of Radha-Krishna are very famous and popular of <a href="meaning.html" style="text-decoration: underline; color: inherit;">Nathdwara </a>Paintings.</p>
   <p>The sentiments of love and emotions are very beautifully depicted from the pictorial art of Rajasthan. The central theme of most of the Rajasthani paintings is love. Love in all the paintings are used to show the symbol of union.The lovers were mainly presented as Radha and Krishna.The figure of Krishna stands for a divine soul and Radha stands for th human soul.</p>
 
 </section>
 <section>
   <h2>Sub-Schools of Rajasthani Schools</h2>
   <p><b><u>MEWAR SCHOOL:-</u></b>The Mughal rule affected the whole of Rajasthan but Mewar was not even affected a bit and did not come under the control of mughals till the end. Mewar school did not have any mughal influence so the school fourished as the purest form of Rajasthani School. Later on Jodhpur,Jaipur,Amber,Kota,Bundi,Bikaner and other places of Rajasthan. </p>
-  <p>This school has blend of of western Indian Gujrat-jain manuscript with persian influence which are in Central Indian Style. All the paintings have the artists name and dates proving that the paintings are from sixteenth century,starting prom Palam Bhagwat <!--add meaning-->(1540-42 - according to the indian historians). In these historical paintings the proportion were not perfect.The use of bold colours and features mark the native style of painting which makes the paintings stand out. Naturalistic drawing was more famous. For example, The Ragamala Series was a continuous series of paintings painted over years under the direct patronage of Rana Pratab followed by many other literary and religious work. These religious works were in most developed stages during the rule of Jagat Singh I . The greatest master of mature Mewar style was Sahibdin (who was the artist of Maru Ragini) whose works are found in abudance. His style brought folk-styled art appreciation.</p>
+  <p>This school has blend of of western Indian Gujrat-jain manuscript with persian influence which are in Central Indian Style. All the paintings have the artists name and dates proving that the paintings are from sixteenth century,starting from <a href="meaning.html" style="text-decoration: underline; color: inherit;"> Palam Bhagwat</a>(1540-42 - according to the indian historians). In these historical paintings the proportion were not perfect.The use of bold colours and features mark the native style of painting which makes the paintings stand out. Naturalistic drawing was more famous. For example, The Ragamala Series was a continuous series of paintings painted over years under the direct patronage of Rana Pratab followed by many other literary and religious work. These religious works were in most developed stages during the rule of Jagat Singh I . The greatest master of mature Mewar style was Sahibdin (who was the artist of Maru Ragini) whose works are found in abudance. His style brought folk-styled art appreciation.</p>
 <br><br><br>
 <p><b><u>BUNDI SCHOOL:-</u></b>The Bundi schhol was developed in Kota-Bundi and Jhalawar in the beginning of 17th century while under the Hara Rajput Dynasty.The human figures in the paintings resemble the human figures as in paintings of Mewar schhol but the figures look much more expressive and have a darker color complexion. The nature in background is drawn in realistic style. During further growth in the painting style, the faces became more refined and instead of dark complexion the figures sflesh became pinkish.Barahmasa<!--add meaning--> and Rasikapriya<!--add meaning--> were also added as themes for the paintings.Mughal influence started showing in the paintings from 18th century. One could guess mughal style from shading,finer lines for the facial expressions and  cleaner lines for perspective. Decanni influece was also noticed in cylinderical forms of women,gardens as well as fountains and architecture.</p>
 <br><br><br>
@@ -244,6 +247,7 @@ section {
 
 </html>
 
-<!--not updated-->
+<!--updated-->
+<!--the font size is not increasing for some reason i do not know why-->
 
 
