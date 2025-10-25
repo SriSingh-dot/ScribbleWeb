@@ -4,4 +4,111 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Menu</title>
+  <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+<style>
+  body {
+    margin: 40px;
+    background-color: lch(22.77% 17.76 167.08);
+    color: #16130a;
+    text-align: center;
+    line-height: 1.9;
+    box-sizing: border-box;
+    font-size: 1.8rem;
+    position: relative;
+    overflow-x: hidden;
+  }
 
+  .menu-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .menu-box {
+    background-color: hsl(0, 14%, 33%);
+    border: 10px double #C1856D;
+    padding: 60px;
+    width: 70%;
+    max-width: 900px;
+    box-shadow: 0 0 25px hsl(155, 39%, 23%), 0 0 40px #00000060;
+    border-radius: 18px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .menu-box h1 {
+    font-family: 'Allura', cursive;
+    font-size: 10rem;
+    color: hwb(11 45% 35%);
+    text-shadow: 0 0 15px hsl(155, 39%, 23%), 0 0 25px #000000;
+    margin: 0 0 40px 0;
+    letter-spacing: 2px;
+  }
+
+  .menu-content {
+    font-size: 2rem;
+    text-align: left;
+    line-height: 1.8;
+    padding: 20px;
+  }
+
+  a {
+    color: #12422c;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .menu-decoration {
+    position: absolute;
+    z-index: 1;
+    opacity: 0.9;
+  }
+.decoration-bottom-left {
+  bottom: -80px;
+  left: -80px;
+  width: 250px;
+  transform: none;
+}
+
+.decoration-top-right {
+  top: 0px;        
+  right: -60px;
+  width: 200px;
+  transform: none;
+}
+</style>
+
+
+
+</head>
+
+<body>
+  <div class="menu-container">
+    <div class="menu-box">
+      <h1>Menu</h1>
+      <p>Click the below options on where you want to go</p>
+      <div class="menu-content">
+        <p>- <a href="index.html">Home</a></p>
+        <p>- <a href="mini.html">Rajasthani Art</a></p>
+        <p>- <a href="Rpaint.html">Rajasthani Paintings</a></p>
+        <p>- <a href="mughal.html">Mughal Art </a></p>
+        <p>- <a href="Mpaint.html">Mughal Paintings</a></p>
+        <p>- <a href="pahari.html">Pahari Art</a></p>
+        <p>- <a href="Ppaint.html">Pahari Paintings</a></p>
+        <p>- <a href="canvas1.html">Canvas(default)</a></p> 
+        <p>-<a href="meaning.html">Meanings</a></p>
+      </div>
+
+    </div>
+
+<img src="s13.svg" alt="Bottom left decoration" class="menu-decoration decoration-bottom-left">
+<img src="s12.svg" alt="Top right decoration" class="menu-decoration decoration-top-right">
+
+
+  </div>
+</body>
+</html>
+<!--should i add keyframes float?- or highlight?-->
+<!--updated -->

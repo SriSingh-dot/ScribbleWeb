@@ -3,97 +3,131 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rajasthani Art</title>
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <title>Miniature Paintings</title>
+  <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
   <style>
-  body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: hwb(0 44% 43%);
-    color: hwb(37 13% 60%);
-  }
+    body {
+      margin: 0;
+      font-family: "Brush Script MT", cursive;
+      font-size: 20 rem;
+      line-height: 2;
+      background-color: lch(22.77% 17.76 167.08);
+      color: #EEE6CA;
+    }
 
-  .first-page {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 12px double #706D54;
-    box-sizing: border-box;
-    padding: 40px;
-  }
+    .container {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      border: 14px double  #C1856D;
+      box-sizing: border-box;
+      padding: 40px;
+    }
 
-  .first-page h1 {
-    font-family: 'Great Vibes', cursive;
-    font-size: 8rem;
-    color: hwb(36 36% 39%);
-    text-shadow: 0 0 15px hsl(0, 0%, 0%), 0 0 25px hsl(0, 0%, 0%);
-    margin: 0 0 20px 0;
-    text-align: center;
-  }
+    .first-page {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
 
-  .first-page img {
-    width: 100px;
-    height: auto;
-    margin-top: 20px;
-  }
+    .first-page h1 {
+      font-family: 'Allura', cursive;
+      font-size: 10rem;
+      color: hwb(11 45% 35%);
+      text-shadow: 0 0 15px hsl(155, 39%, 23%), 0 0 25px #000000;
+      margin: 0;
+      text-align: center;
+      letter-spacing: 2px;
+    }
 
-section {
-  min-height: 100vh;
+    .first-page img {
+      width: 100px;
+      height: auto;
+      margin-top: 20px;
+    }
+
+    section {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 60px 40px;
+      gap: 20px;
+      border-bottom: 2px solid #C1856D;
+    }
+
+    section h2 {
+      font-family: 'Allura', cursive;
+      font-size: 5rem;
+      color: hwb(12 46% 29%);
+      text-shadow: 0 0 10px hwb(155 15% 68%), 0 0 20px hwb(0 0% 100%);
+      margin: 0 0 20px 0;
+      text-align: center;
+      width: 100%;
+      letter-spacing: 1px;
+    }
+
+    section p {
+      font-size: 1.5rem;
+      line-height: 1.8;
+      text-align: left;
+      margin: 0;
+    }
+
+    footer {
+      background-color: hsl(0, 14%, 33%);
+      color: #EEE6CA;
+      text-align: center;
+      padding: 15px 0;
+      font-size: 1.5rem;
+      font-family: 'Allura', cursive;
+      border-top: 5px solid #C1856D;
+      border-bottom: 5px solid #C1856D;
+      box-shadow: inset 0 0 0 3px #C1856D;
+    }
+
+    footer a {
+      color: #EEE6CA;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    .icon {
+      width: 25px;
+      height: 25px;
+      vertical-align: middle;
+      margin-right: 5px;
+    }
+.image-row {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 60px 40px;
-  gap: 20px;
-  border-bottom: 6px solid hsl(60, 18%, 41%);
+  justify-content: center;   
+  align-items: flex-start;   
+  gap: 30px;                
+  flex-wrap: wrap;           
+  margin: 30px auto;         
+  width: 80%;                
 }
 
-
-  section h2 {
-    font-family: 'Great Vibes', cursive;
-    font-size: 5rem;
-    color: #A08963;
-    text-shadow: 0 0 10px #000000, 0 0 20px #000000;
-    margin: 0 0 20px 0;
-    text-align: center;
-    width: 100%;
-  }
-
-  section p {
-    font-size: 1.5rem;
-    line-height: 1.8;
-    text-align: left;
-    margin: 0;
-  }
-  footer {
-  background-color: hsl(309, 12%, 44%);
-  color: hsl(37, 42%, 14%);
-  text-align: center;
-  padding: 15px 0;
-  font-size: 1.5rem;
-  font-family: 'Great Vibes', cursive;
-  border-top: 5px solid hwb(197 16% 69%);
-  border-bottom: 5px solid hwb(197 16% 69%);
-}
-
-footer a {
-  color: lab(29.06% 1.11 19.61);
-  text-decoration: none;
-  margin: 0 15px;
-  font-weight: bold;
-  text-shadow: 0 0 8px #A08963, 0 0 15px #A08963;
-}
-
-footer a:hover {
-  text-decoration: underline;
-  text-shadow: 0 0 12px #C6B48B, 0 0 20px #C6B48B;
+.image-row img {
+  border: 16px double #C1856D;  
+  padding: 5px;
+  box-sizing: border-box;
+  width: 300px;                
+  height: auto;               
+  display: block;
 }
 
 
 
-
-</style>
+  </style>
  </head>
   <body>
      <div class="first-page">
