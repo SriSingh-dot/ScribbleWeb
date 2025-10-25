@@ -117,21 +117,54 @@
     text-decoration: underline;
   }
 
-  footer {
+   footer {
     font-family: 'Allura', cursive;
     background-color: hsl(0, 14%, 33%);
     color: #EEE6CA;
     text-align: center;
-    padding: 25px 0;
-    font-size: 2rem;
+    padding: 20px 0;
     border-top: 5px solid #C1856D;
     border-bottom: 5px solid #C1856D;
-    box-shadow: inset 0 0 0 3px #C1856D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+
+  .footer-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #EEE6CA;
+    font-size: 1.5rem;
+    margin: 0 20px;
+  }
+
+  .footer-link span {
+    margin-top: 5px;
+  }
+
+  
+  .footer-icon {
+    width: 40px;
+    height: auto;
+    filter: brightness(0) invert(1);
+  }
+
+  
+  .footer-side {
+    display: flex;
+    gap: 8px;
+  }
+
+  .footer-side-icon {
+    width: 35px; 
+    height: auto;
+    filter: none; 
   }
 </style>
-
-
-
 </head>
 <body>
 
@@ -347,20 +380,45 @@ Point-the simplest thing ever to be discovered. It is the first and simplest ele
     <br>
     
 
+<footer>
+  <!--added left side-->
+  <div class="footer-side">
+    <img src="s11.svg" alt="" class="footer-side-icon">
+    <img src="s12.svg" alt="" class="footer-side-icon">
+    <img src="s13.svg" alt="" class="footer-side-icon">
+    <img src="s14.svg" alt="" class="footer-side-icon">
+    <img src="s16.svg" alt="" class="footer-side-icon">
+    <img src="s17.svg" alt="" class="footer-side-icon">
+    <img src="s18.svg" alt="" class="footer-side-icon">
+    <img src="s19.svg" alt="" class="footer-side-icon">
+    <img src="s20.svg" alt="" class="footer-side-icon">
+  </div>
 
- <footer>
-  <a href="menu.html" style="text-align:center; display:inline-block; margin:0 20px; color:#EEE6CA; font-family:'Allura', cursive; font-size:1.6rem;">
-    <img src="s21.svg" alt="Menu" style="width:40px; height:auto; display:block; margin:0 auto;">
-    Menu
+  <!--21=menu-->
+  <a href="menu.html" class="footer-link">
+    <img src="s21.svg" alt="Menu" class="footer-icon">
+    <span>Menu</span>
+  </a>
+<!--22=home-->
+  <a href="index.html" class="footer-link">
+    <img src="s22.svg" alt="Home" class="footer-icon">
+    <span>Home</span>
   </a>
 
-  <a href="index.html" style="text-align:center; display:inline-block; margin:0 20px; color:#EEE6CA; font-family:'Allura', cursive; font-size:1.6rem;">
-    <img src="s22.svg" alt="Home" style="width:40px; height:auto; display:block; margin:0 auto;">
-    Home
-  </a>
+  <!--added right side-->
+  <div class="footer-side">
+    <img src="s11.svg" alt="" class="footer-side-icon">
+    <img src="s12.svg" alt="" class="footer-side-icon">
+    <img src="s13.svg" alt="" class="footer-side-icon">
+    <img src="s14.svg" alt="" class="footer-side-icon">
+    <img src="s16.svg" alt="" class="footer-side-icon">
+    <img src="s17.svg" alt="" class="footer-side-icon">
+    <img src="s18.svg" alt="" class="footer-side-icon">
+    <img src="s19.svg" alt="" class="footer-side-icon">
+    <img src="s20.svg" alt="" class="footer-side-icon">
+  </div>
 </footer>
 
-   
 
 
 </body>
