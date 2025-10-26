@@ -5,176 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Miniature Paintings</title>
   <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      font-family: "Brush Script MT", cursive;
-      font-size: 1.8rem;
-      line-height: 2;
-      background-color: lch(22.77% 17.76 167.08);
-      color: #EEE6CA;
-    }
-
-    .container {
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      border: 14px double  #C1856D;
-      box-sizing: border-box;
-      padding: 40px;
-    }
-
-    .first-page {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-    }
-
-    .first-page h1 {
-      font-family: 'Allura', cursive;
-      font-size: 10rem;
-      color: hwb(11 45% 35%);
-      text-shadow: 0 0 15px hsl(155, 39%, 23%), 0 0 25px #000000;
-      margin: 0;
-      text-align: center;
-      letter-spacing: 2px;
-    }
-
-    .first-page img {
-      width: 100px;
-      height: auto;
-      margin-top: 20px;
-    }
-
-    section {
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      padding: 60px 40px;
-      gap: 20px;
-      border-bottom: 2px solid #C1856D;
-    }
-
-    section h2 {
-      font-family: 'Allura', cursive;
-      font-size: 5rem;
-      color: hwb(12 46% 29%);
-      text-shadow: 0 0 10px hwb(155 15% 68%), 0 0 20px hwb(0 0% 100%);
-      margin: 0 0 20px 0;
-      text-align: center;
-      width: 100%;
-      letter-spacing: 1px;
-    }
-
-    section p {
-      font-size: 1.5rem;
-      line-height: 1.8;
-      text-align: left;
-      margin: 0;
-    }
-
-    .icon {
-      width: 25px;
-      height: 25px;
-      vertical-align: middle;
-      margin-right: 5px;
-    }
-.image-row {
-  display: flex;
-  justify-content: center;   
-  align-items: flex-start;   
-  gap: 30px;                
-  flex-wrap: wrap;           
-  margin: 30px auto;         
-  width: 80%;                
-}
-
-.image-row img {
-  border: 16px double #C1856D;  
-  padding: 5px;
-  box-sizing: border-box;
-  width: 300px;                
-  height: auto;               
-  display: block;
-}
-footer {
-  font-family: 'Allura', cursive;
-  background-color: hsl(0, 14%, 33%);
-  color: #EEE6CA;
-  text-align: center;
-  padding: 20px 0;
-  border-top: 5px solid #C1856D;
-  border-bottom: 5px solid #C1856D;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-  flex-wrap: wrap;
-}
-
-.footer-link {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-decoration: none;
-  color: #EEE6CA;
-  font-size: 1.5rem;
-  margin: 0 20px;
-}
-
-.footer-link span {
-  margin-top: 5px;
-}
-
-
-.footer-icon {
-  width: 40px;
-  height: auto;
-  filter: brightness(0) invert(1)
-}
-
-
-.footer-side {
-  display: flex;
-  gap: 8px;
-}
-
-.footer-side-icon {
-  width: 35px; 
-  height: auto;
-  filter: none;
-}
-
-.central-school h2 {
-  font-family: 'Allura', cursive;
-  font-size: 5rem;
-  color: hwb(12 46% 29%);
-  text-shadow: 0 0 10px hwb(155 15% 68%), 0 0 20px hwb(0 0% 100%);
-  text-align: center;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 15px;
-  margin: 0 0 20px 0;
-  width: 100%;
-}
-
-.central-school h2 img {
-  width: 150px;
-  height: auto;
-}
-
-
-
-</style>
-
-
-
-  </style>
+  
+    
 </head>
 <body>
   <div class="container">
@@ -183,7 +15,10 @@ footer {
     </div>
 
   <section>
-    <h2>History of Miniature Painting</h2>
+ <h2 class="svg-heading">
+  <img src="s28.svg" alt="Icon" class="left-icon">
+  History of Miniature Painting
+</h2>
     <div class="image-row">
     <img src="use1.jpg" alt="Miniature Painting 1">
     <img src="use2.jpg" alt="Miniature Painting 2">
@@ -192,7 +27,12 @@ footer {
   </section>
 
   <section>
-    <h2>Pala School</h2>
+   <h3 class="svg-heading">
+  Pala School
+  <img src="s27.svg" alt="Icon" class="right-icon">
+</h3>
+
+
      <div class="image-row">
     <img src="use3.jpg" alt="Pala 1">
     <img src="use4.jpg" alt="Pala 2">
@@ -204,18 +44,22 @@ footer {
   </section>
 
   <section>
-    <h2>Western School</h2>
+    <h3 class="svg-heading">
+  <img src="s26.svg" alt="Icon" class="left-icon">
+  Western School
+</h3>
+
      <div class="image-row">
     <img src="use5.jpg" alt="Western 1">
     <img src="use6.jpg" alt="Western 2">
   </div>
     <p>The motivating force for the artistic Western India was Jainism that was patronised by the King of Chalukya Dynasty who ruled Gujrat,Malwa and parts of Rajasthan.Example of one of the oldest painting of this school is <a href="meaning.html" style="text-decoration: underline; color: inherit;"> Rishabnath </a> .Twenty four Tirthankars were painted in  these manuscript which are all now available in in the jain <a href="meaning.html" style="text-decoration: underline; color: inherit;">bhandaras </a>.The illustrations are very unnique with bold elegant features.One find in this style is the exaggeration of physical traits of a person, for instance, eyes,hips and breasts are enlarged. The figures are drawn flat with simple flat colours.After the palm-leaf use from 1100 to 1400 A.D ,later paper were used for the manuscript. There were two famous and influential manuscript Jain text that were repeated and illustrated .Those scripts are :-(a) The Kalpasutra  (b) The <a href="meaning.html" style="text-decoration: underline; color: inherit;">Kalakacharya-Katha</a> </p>
 </section>
- <section class="central-school">
-  <h2>
+ <section class="svg-heading">
+  <h3>
     Schools of Central India
     <img src="s23.svg" alt="girl" class="heading-icon">
-  </h2>
+  </h3>
   <p>The initial phase of miniature/manuscript in central India was marked by the <a href="meaning.html" style="text-decoration: underline; color: inherit;">Kalpa-Sutra</a>
  illustrations of Mandu (Malwa region of Madhya Pradesh) in as early as the 11th-12th century.</p>
 <p>Mandu was the place inluenced by art from every direction just becasue of being in Central India.For example- Jain manuscript of Gujrat,Muslim elements of Jaunpur etc. In 15th century, Mandu was ruled by the Khaliji Dynasty under which the art schools were greatly influenced by persian art style. This could be seen in <a href="meaning.html" style="text-decoration: underline; color: inherit;">Nimat-Nama </a> . Later during the rule of Sultan Baz Bahadur, there was an inclination for romantic and secular themes. That's when <a href="meaning.html" style="text-decoration: underline; color: inherit;">Ragmala </a>series, Laur Chanda and etc became subjects. We an easily conclude that the art of central India strated primary with the the influence of Gujrat but further it got developed with wide ranging influence over time.Some of the special features were large protruding eyes, angular faces, men and women of moderate height and usage of plenty of motifs on clothes and large amount of gold color. </p>
@@ -248,7 +92,11 @@ footer {
 
 </section>
 <section>
-  <h2>Rajasthan School Of Painting</h2>
+  <h2 class="svg-heading">
+  <img src="s24.svg" alt="Icon" class="heading-icon">
+  Rajasthan School of Painting
+</h2>
+
   <p><b><u>GEOGRAPHICAL SITUATION :-</u></b>Rajasthan is the state surrounded by Pakistan,Punjab,Haryana,Madhya Pradesh,Uttar Pradesh as well as Gujrat. Rajasthan has it's own meaning ,place of Kings (Rajas) or maybe place of Kingdoms (Rajyas) as Rajasthan in early times was famous for many kings and kingdoms.Rajasthani Art was never a new school art ,but it is actually the purified and refined form of the traditional form of Indian art whih was all developed in India, Gujrat as well as Mewar.The artists from central India shifted to Rajasthan enhancing the traditional miniature art too.Rajasthan schhol of art is also called Rajasthani schools or Hindu school of art. The art in Rajasthan was solely based on Hindi literature, Music, Poetry, Rag and Raginis etc.</p>
   <p><b><u>ORIGIN AND DEVELOPMENT OF RAJASTHAN ART :-</u></b>Rajasthani art or what we could say Hindu art did not originate as miniature painting initially but it was primarily mural art. The art was developed over the years under the rule of Rajput kings so it is called Rajput Art. Under the rule of Rajputs, the art was influenced mainly from Romance and general folk themes.</p>
   <p>There were two major factors due to which Rajasthani Art flourished. :- firstly,the economin prosperity of commercial community started to encourage literature,music and arts.Secondly,the revival of <a href="meaning.html" style="text-decoration: underline; color: inherit;"> vaishnavism </a> and Bhakti cult against caste sysytem which was against Hinduism.  </p>
@@ -257,7 +105,10 @@ footer {
 
 </section>
 <section>
-  <h2>Sub-Schools of Rajasthani Schools</h2>
+  <h3 class="svg-heading">
+  Sub-Schools of Rajasthan School
+  <img src="s25.svg" alt="Icon" class="sub-icon">
+</h3>
   <p><b><u>MEWAR SCHOOL:-</u></b>The Mughal rule affected the whole of Rajasthan but Mewar was not even affected a bit and did not come under the control of mughals till the end. Mewar school did not have any mughal influence so the school fourished as the purest form of Rajasthani School. Later on Jodhpur,Jaipur,Amber,Kota,Bundi,Bikaner and other places of Rajasthan. </p>
    <div class="image-row">
     <img src="use7.jpg" alt="Mewar 1">
