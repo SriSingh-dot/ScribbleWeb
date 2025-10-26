@@ -5,7 +5,171 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Miniature Paintings</title>
   <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
-  
+<style>
+body {
+  margin: 0;
+  font-family: "Brush Script MT", cursive;
+  font-size: 1.8rem;
+  line-height: 2;
+  background-color: lch(22.77% 17.76 167.08);
+  color: #EEE6CA;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  border: 14px double #C1856D;
+  box-sizing: border-box;
+  padding: 40px;
+}
+
+.first-page {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.first-page h1 {
+  font-family: 'Allura', cursive;
+  font-size: 10rem;
+  color: hwb(11 45% 35%);
+  text-shadow: 0 0 15px hsl(155, 39%, 23%), 0 0 25px #000000;
+  margin: 0;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.first-page img {
+  width: 100px;
+  height: auto;
+  margin-top: 20px;
+}
+
+section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 60px 40px;
+  gap: 20px;
+  border-bottom: 2px solid #C1856D;
+}
+
+section h2 {
+  font-family: 'Allura', cursive;
+  font-size: 5rem;
+  color: hwb(12 46% 29%);
+  text-shadow: 0 0 10px hwb(155 15% 68%), 0 0 20px hwb(0 0% 100%);
+  margin: 0 0 20px 0;
+  text-align: center;
+  width: 100%;
+  letter-spacing: 1px;
+}
+
+section p {
+  font-size: 1.5rem;
+  line-height: 1.8;
+  text-align: left;
+  margin: 0;
+}
+
+.icon {
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.image-row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin: 30px auto;
+  width: 80%;
+}
+
+.image-row img {
+  border: 16px double #C1856D;
+  padding: 5px;
+  box-sizing: border-box;
+  width: 300px;
+  height: auto;
+  display: block;
+}
+
+footer {
+  font-family: 'Allura', cursive;
+  background-color: hsl(0, 14%, 33%);
+  color: #EEE6CA;
+  text-align: center;
+  padding: 20px 0;
+  border-top: 5px solid #C1856D;
+  border-bottom: 5px solid #C1856D;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.footer-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #EEE6CA;
+  font-size: 1.5rem;
+  margin: 0 20px;
+}
+
+.footer-link span {
+  margin-top: 5px;
+}
+
+.footer-icon {
+  width: 40px;
+  height: auto;
+  filter: brightness(0) invert(1);
+}
+
+.footer-side {
+  display: flex;
+  gap: 8px;
+}
+
+.footer-side-icon {
+  width: 45px;
+  height: auto;
+  filter: none;
+}
+
+.svg-heading {
+  font-family: 'Allura', cursive;
+  display: inline-flex;   
+  justify-content: center;  
+  align-items: center;     
+  gap: 15px;                
+  color: #6B4C3B;
+  text-shadow: 0 0 10px hwb(155 15% 68%), 0 0 20px hwb(0 0% 100%);
+  font-size: 5rem;
+  margin: 40px auto;         
+}
+
+.svg-heading img {
+  width: 150px;
+  height: auto;
+}
+.svg-heading p {
+  color: #EEE6CA; 
+}
+
+</style>
     
 </head>
 <body>
@@ -15,10 +179,10 @@
     </div>
 
   <section>
- <h2 class="svg-heading">
-  <img src="s28.svg" alt="Icon" class="left-icon">
+ <h3 class="svg-heading">
   History of Miniature Painting
-</h2>
+  <img src="s23.svg" alt="icon" class="heading-icon">
+</h3>
     <div class="image-row">
     <img src="use1.jpg" alt="Miniature Painting 1">
     <img src="use2.jpg" alt="Miniature Painting 2">
