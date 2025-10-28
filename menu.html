@@ -9,7 +9,7 @@
   body {
     margin: 40px;
     background-color: lch(22.77% 17.76 167.08);
-    color: #16130a;
+    color: rgb(66, 18, 18);
     text-align: center;
     line-height: 1.9;
     box-sizing: border-box;
@@ -27,8 +27,8 @@
   }
 
   .menu-box {
-    background-color: hsl(0, 14%, 33%);
-    border: 10px double #C1856D;
+    background-color: hwb(0 48% 30%);
+    border: 10px double #531212;
     padding: 60px;
     width: 70%;
     max-width: 900px;
@@ -41,8 +41,8 @@
   .menu-box h1 {
     font-family: 'Allura', cursive;
     font-size: 10rem;
-    color: lab(39.58% 11.77 9.09);
-    text-shadow: 0 0 15px hsl(0, 0%, 0%), 0 0 25px #000000;
+    color: hsl(0, 60%, 20%);
+    text-shadow: 0 0 15px hsl(0, 18%, 76%), 0 0 25px #000000;
     margin: 0 0 40px 0;
     letter-spacing: 2px;
   }
@@ -78,6 +78,25 @@
   width: 200px;
   transform: none;
 }
+footer {
+  margin-top: 60px;
+  padding: 25px 0;
+  background-color: hsl(0, 14%, 33%);
+  border-top: 4px double #C1856D;
+  box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.4);
+}
+
+footer img {
+  width: 60px;
+  margin: 8px;
+  filter: drop-shadow(2px 2px 6px rgba(255, 252, 252, 0.6));
+  transition: transform 0.3s ease;
+}
+
+footer img:hover {
+  transform: scale(1.1);
+}
+
 </style>
 
 
@@ -87,18 +106,24 @@
 <body>
   <div class="menu-container">
     <div class="menu-box">
-      <h1>Menu</h1>
+      <u><h1>Menu</h1>
       <p>Click the below options on where you want to go</p>
       <div class="menu-content">
-        <p>- <a href="index.html">Home</a></p>
-        <p>- <a href="mini.html">Rajasthani Art</a></p>
-        <p>- <a href="Rpaint.html">Rajasthani Paintings</a></p>
-        <p>- <a href="mughal.html">Mughal Art </a></p>
-        <p>- <a href="Mpaint.html">Mughal Paintings</a></p>
-        <p>- <a href="pahari.html">Pahari Art</a></p>
-        <p>- <a href="Ppaint.html">Pahari Paintings</a></p>
-        <p>- <a href="canvas1.html">Canvas(default)</a></p> 
+       <p>-<a href="index.html">Home</a></p>
+        <p>-<a href="mini.html">Rajasthani Art</a></p>
+        <p>-<a href="Rpaint.html">Rajasthani Paintings</a></p>
+        <p>-<a href="mughal.html">Mughal Art </a></p>
+        <p>-<a href="Mpaint.html">Mughal Paintings</a></p>
+        <p>-<a href="pahari.html">Pahari Art</a></p>
+        <p>-<a href="Ppaint.html">Pahari Paintings</a></p>
+        <p>-<a href="canvas1.html">Canvas(default)</a></p> 
         <p>-<a href="meaning.html">Meanings</a></p>
+        <p># For testing yourself go for the quizes:-</p>
+        <p>-<a href="question.html">Quiz-1</a></p>
+        <p>-<a href="question2.html">Quiz-2</a></p>
+        <p># Do you want to check other themes for your canvas?</p>
+        <p>-<a href="theme.html">Canvas Themes</a></p>
+        </p></u>
       </div>
 
     </div>
@@ -108,7 +133,26 @@
 
 
   </div>
+
+
+  <footer style="margin-top: 50px; text-align: center;">
+  <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 10px;">
+    <img src="a1.svg" alt="" width="60">
+    <img src="a2.svg" alt="" width="60">
+    <img src="a3.svg" alt="" width="60">
+    <img src="a4.svg" alt="" width="60">
+    <img src="a5.svg" alt="" width="60">
+    <img src="a6.svg" alt="" width="60">
+    <img src="a7.svg" alt="" width="60">
+    <img src="a8.svg" alt="" width="60">
+    <img src="a9.svg" alt="" width="60">
+    <img src="a10.svg" alt="" ">
+    <img src="a11.svg" alt="">
+  </div>
+</footer>
+
 </body>
 </html>
-<!--should i add keyframes float?- or highlight?-->
+
 <!--updated -->
+<!--no addition to be made-->
