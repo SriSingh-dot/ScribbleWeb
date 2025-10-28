@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Miniature Paintings</title>
+  <title>Pahari Art</title>
   <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
   <style>
     body {
@@ -14,16 +14,6 @@
       background-color: lch(22.77% 17.76 167.08);
       color: #EEE6CA;
     }
-
-    .container {
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      border: 14px double  #C1856D;
-      box-sizing: border-box;
-      padding: 40px;
-    }
-
     .first-page {
       flex: 1;
       display: flex;
@@ -77,35 +67,7 @@
       margin: 0;
     }
 
-    footer {
-      background-color: hsl(0, 14%, 33%);
-      color: #EEE6CA;
-      text-align: center;
-      padding: 15px 0;
-      font-size: 1.5rem;
-      font-family: 'Allura', cursive;
-      border-top: 5px solid #C1856D;
-      border-bottom: 5px solid #C1856D;
-      box-shadow: inset 0 0 0 3px #C1856D;
-    }
-
-    footer a {
-      color: #EEE6CA;
-      text-decoration: none;
-      margin: 0 15px;
-      font-weight: bold;
-    }
-
-    footer a:hover {
-      text-decoration: underline;
-    }
-
-    .icon {
-      width: 25px;
-      height: 25px;
-      vertical-align: middle;
-      margin-right: 5px;
-    }
+    
 .image-row {
   display: flex;
   justify-content: center;   
@@ -124,13 +86,91 @@
   height: auto;               
   display: block;
 }
+footer {
+  background-color: hsl(0, 55%, 22%);
+  border-top: 5px solid #5f3a3a;
+  border-bottom: 5px solid #5f3a3a;
+  padding: 20px 0;
+  box-shadow: inset 0 0 0 3px #000000;
+}
+
+.footer-center {
+  display: flex;
+  flex-direction: row;   
+  justify-content: center;
+  align-items: center;
+  gap: 40px;            
+}
 
 
+.footer-link {
+  color: #6e3329;
+  text-decoration: none;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
 
-  </style>
+.footer-icon {
+  width: 40px;
+  height: 40px;
+}
+.footer-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 40px;
+  text-align: center;
+}
+
+.footer-left,
+.footer-right {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer-link.highlight {
+  text-shadow: 0 0 8px white, 0 0 15px white;
+}
+
+.footer-link.highlight .footer-icon {
+  filter: drop-shadow(0 0 6px white);
+}
+
+.footer-left img,
+.footer-right img {
+  width: 48px;
+  height: 48px;
+  filter: none;
+}
+ .heading-with-icon {
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  gap: 15px;               
+  margin-bottom: 25px;     
+}
+
+.heading-icon {
+  width: 200px;  
+  height: auto;
+}
+.outer-border {
+  border: 20px double #C1856D; 
+  margin: 20px; 
+  padding: 20px;
+  box-sizing: border-box;
+}
+ </style>
 
   </head>
   <body>
+  <div class="outer-border">
      <div class="first-page">
         <h1>The Pahari School</h1>
      </div>
@@ -181,8 +221,55 @@
           <p><b>15.Based on Folk Art: </b>The paintings, especially the trees has a typical folk influence. This influence of folk is specially found in Basohli which later reached the Kangra art.</p>
           <p><b>16.architecture: </b>Marble palaces, decorated gates, window lattices, curved domes etc, all are made in mughal style. The interior with wine cups, vases and other furniture and decoratives materials shows the royal finesse.</p>
 
-               </section>
+         </section>
+         </div>
+       <footer>
+  <div class="footer-row">
+   
+    <div class="footer-left">
+      <img src="a1.svg" alt="icon">
+      <img src="a2.svg" alt="icon">
+      <img src="a3.svg" alt="icon">
+      <img src="a4.svg" alt="icon">
+      <img src="a5.svg" alt="icon">
+      <img src="a6.svg" alt="icon">
+      <img src="a8.svg" alt="icon">
+      <img src="a9.svg" alt="icon">
+      <img src="a10.svg" alt="icon">
+    </div>
+
+   
+  <div class="footer-center">
+    <a href="menu.html" class="footer-link highlight">
+      <img src="s21.svg" alt="Menu" class="footer-icon">
+      Menu
+    </a>
+
+    <a href="index.html" class="footer-link highlight">
+      <img src="s22.svg" alt="Home" class="footer-icon">
+      Home
+    </a>
+
+   
+  </div>
+
+
+
+    <div class="footer-right">
+      <img src="a11.svg" alt="icon">
+      <img src="a12.svg" alt="icon">
+      <img src="a13.svg" alt="icon">
+      <img src="a14.svg" alt="icon">
+      <img src="a16.svg" alt="icon">
+      <img src="a17.svg" alt="icon">
+      <img src="a18.svg" alt="icon">
+      <img src="a19.svg" alt="icon">
+      <img src="a20.svg" alt="icon">
+    </div>
+  </div>
+</footer>
+
 
   </body>
   </html>
-  <!--not updated-->
+  <!--in progress-->
