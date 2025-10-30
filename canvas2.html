@@ -7,148 +7,146 @@
   <title>ScribbleWeb</title>
 
   <style>
-    /* i used dr2jpg */
-
+    /* Theme: Midnight Purple */
     body {
       margin: 0;
       padding: 0;
       height: 100vh;
-      background: url("dr1.jpg") no-repeat center center fixed; /*setting name of the canvas as )*/
-      background-size: cover;
-      font-family: Arial, sans-serif;
-      color: white;
+      background: url("dr1.jpg") center center / cover no-repeat fixed;
       display: flex;
-      flex-direction: column; 
+      flex-direction: column;
+      font-family: Arial, sans-serif;
+     
     }
 
-    #toolbar {
+    header#toolbar {
       display: flex;
       align-items: center;
-      justify-content: flex-start;
       gap: 12px;
-      padding: 10px;
-      background-color: #44444E; 
-      box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+      padding: 10px 15px;
+      background-color: #0c0e31;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
     }
 
-    #toolbar h2 {
-      margin: 0 15px 0 0;
-      background: linear-gradient(to right, hsl(231, 50%, 44%), #362ea7, hsl(219, 56%, 50%));
+    header#toolbar h2 {
+      margin: 0;
+      margin-right: 15px;
+      font-weight: 600;
+      background: linear-gradient(to right, hsl(64, 38%, 70%), #c8d396, hsl(219, 42%, 71%));
       -webkit-background-clip: text;
       background-clip: text;
       -webkit-text-fill-color: transparent;
     }
 
-    #toolbar label {
+    header#toolbar label {
       font-size: 14px;
     }
 
-    #toolbar input {
+    header#toolbar input {
       padding: 2px;
     }
 
-    #toolbar button {
-      background-color: #d2691e;
+    header#toolbar button {
+      background-color: #174617;
+      color: white;
       border: none;
       border-radius: 4px;
-      color: white;
       padding: 6px 10px;
       cursor: pointer;
-      transition: 0.2s;
+      transition: transform 0.2s, background-color 0.2s;
     }
 
-    #toolbar button:hover {
-      background-color: #a0522d;
+    header#toolbar button:hover {
+      background-color: #1e4b20;
       transform: scale(1.05);
     }
 
-    .canvasBoard {
-      flex: 1;
+    main.canvas-area {
+      flex-grow: 1;
       display: flex;
       justify-content: center;
       align-items: center;
-      padding: 40px; 
+      padding: 40px;
     }
 
     canvas {
-      background: white;
-      box-shadow: 0 0 20px rgba(0,0,0,0.6);
+      background-color: white;
       display: block;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
     }
   </style>
 </head>
+
 <body>
-  <div id="toolbar">
+  <header id="toolbar">
     <h2>Creative Board</h2>
 
     <label for="stroke">Color:</label>
-    <input id="stroke" name="stroke" type="color">
+    <input type="color" id="stroke" name="stroke">
 
     <label for="lineWidth">Brush:</label>
-    <input id="lineWidth" name="lineWidth" type="number" value="5" min="1" max="50">
+    <input type="number" id="lineWidth" name="lineWidth" value="5" min="1" max="50">
 
     <button id="clear">Wipe</button>
     <button id="theme">Theme</button>
-  </div>
+  </header>
 
-  <div class="canvasBoard">
+  <main class="canvas-area">
     <canvas id="canvasBoard"></canvas>
-  </div>
+  </main>
 
   <script>
-    const canvas = document.getElementById('canvasBoard');
-    const ctx = canvas.getContext('2d');
+    const canvas = document.getElementById("canvasBoard");
+    const ctx = canvas.getContext("2d");
 
+    // Resize canvas to fit container
     function resizeCanvas() {
-      const board = document.querySelector('.canvasBoard');
-      canvas.width = board.clientWidth - 80;  // account for 40px padding on each side
-      canvas.height = board.clientHeight - 80;
+      const area = document.querySelector(".canvas-area");
+      canvas.width = area.clientWidth - 80;
+      canvas.height = area.clientHeight - 80;
     }
+
+    window.addEventListener("resize", resizeCanvas);
     resizeCanvas();
-    window.addEventListener('resize', resizeCanvas);
 
-    let painting = false;
+    let drawing = false;
 
-    function startPosition(e) {
-      painting = true;
+    const startDrawing = (e) => {
+      drawing = true;
       draw(e);
-    }
+    };
 
-    function endPosition() {
-      painting = false;
+    const stopDrawing = () => {
+      drawing = false;
       ctx.beginPath();
-    }
+    };
 
-    function draw(e) {
-      if (!painting) return;
+    const draw = (e) => {
+      if (!drawing) return;
+
       const rect = canvas.getBoundingClientRect();
-      ctx.lineWidth = document.getElementById('lineWidth').value;
-      ctx.lineCap = 'round';
-      ctx.strokeStyle = document.getElementById('stroke').value;
+      ctx.lineWidth = document.getElementById("lineWidth").value;
+      ctx.lineCap = "round";
+      ctx.strokeStyle = document.getElementById("stroke").value;
 
       ctx.lineTo(e.clientX - rect.left, e.clientY - rect.top);
       ctx.stroke();
       ctx.beginPath();
       ctx.moveTo(e.clientX - rect.left, e.clientY - rect.top);
-    }
+    };
 
-    canvas.addEventListener('mousedown', startPosition);
-    canvas.addEventListener('mouseup', endPosition);
-    canvas.addEventListener('mousemove', draw);
+    canvas.addEventListener("mousedown", startDrawing);
+    canvas.addEventListener("mouseup", stopDrawing);
+    canvas.addEventListener("mousemove", draw);
 
-    document.getElementById('clear').addEventListener('click', () => {
+    document.getElementById("clear").addEventListener("click", () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
     });
 
-    // Redirect to theme.html when Theme button clicked <done>
-    document.getElementById('theme').addEventListener('click', () => {
+    document.getElementById("theme").addEventListener("click", () => {
       window.location.href = "theme.html";
     });
   </script>
 </body>
 </html>
 
-<!--added different style--><!--done-->
-<!--need to rewrite style cause ai was used....-->
-<!-- background missing-->
- <!--not updated-->
