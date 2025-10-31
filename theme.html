@@ -7,7 +7,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
 
   <style>
-    body {
+  body {
       margin: 40px;
       background-color: lch(22.77% 17.76 167.08);
       color: rgb(66, 3, 3);
@@ -72,11 +72,114 @@
       text-decoration: none;
       color: inherit;
     }
+    h1 {
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       gap: 20px;
+    }
+
+    .heading-icon {
+       width: 100px;
+       height: 100px;
+       object-fit: contain;
+       transition: transform 0.3s ease;
+    }
+
+    .left-icon {
+         margin-right: 10px;
+    }
+
+    .right-icon {
+         margin-left: 10px;
+    }
+
+    footer {
+         background-color: hsl(0, 55%, 22%);
+         border-top: 5px solid #5f3a3a;
+         border-bottom: 5px solid #5f3a3a;
+         padding: 20px 0;
+         box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.4);
+    }
+
+    .footer-row {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         flex-wrap: wrap;
+         padding: 0 40px;
+          text-align: center;
+    }
+
+    .footer-left,
+    .footer-right {
+         display: flex;
+         gap: 10px;
+         flex-wrap: wrap;
+         justify-content: center;
+    }
+
+    .footer-center {
+         display: flex;
+         flex-direction: row;
+         justify-content: center;
+         align-items: center;
+         gap: 40px;
+    }
+
+    .footer-link {
+         color: hsl(122, 44%, 16%);
+         text-decoration: none;
+         font-weight: bold;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         gap: 4px;
+         transition: transform 0.2s ease, text-shadow 0.2s ease;
+    }
+
+    .footer-link:hover {
+         transform: scale(1.1);
+         text-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+    }
+
+    .footer-icon,
+    .footer-left img,
+    .footer-right img {
+           width: 50px;
+           height: 50px;
+           object-fit: contain;
+           filter: none;
+    }
+
+    .footer-link.highlight {
+           text-shadow: 0 0 8px rgb(0, 0, 0), 0 0 15px rgb(12, 10, 10);
+    }
+
+    .footer-link.highlight .footer-icon {
+           filter: drop-shadow(0 0 6px rgb(175, 157, 107));
+    }
+    .outer-border {
+           border: 20px double rgb(85, 13, 13); 
+           margin: 20px; 
+           padding: 20px;
+           box-sizing: border-box;
+    }
+
+
+
   </style>
-</head>
+  </head>
 
 <body>
-  <h1>Themes</h1>
+   <div class="outer-border">
+     <div class="first-page">
+  <h1>
+  <img src="s23.svg" alt="Left icon" class="heading-icon left-icon">
+  <u> Themes</u>
+  <img src="s25.svg" alt="Right icon" class="heading-icon right-icon">
+</h1>
+
 
   <div class="themes-box">
     <div class="themes-container">
@@ -121,9 +224,60 @@
         <p>Theme 8 — Cakey Delight.</p>
       </a>
 
-    </div>j  
+    </div>
 
   </div>
+  
+  <br>
    These are the themes for the frame of the canvas
+   </div></div>
+<br>
+<br>
+<footer>
+  <div class="footer-row">
+
+    <!-- Left side icons -->
+    <div class="footer-left">
+      <img src="a1.svg" alt="icon">
+      <img src="a2.svg" alt="icon">
+      <img src="a3.svg" alt="icon">
+      <img src="a4.svg" alt="icon">
+      <img src="a5.svg" alt="icon">
+      <img src="a6.svg" alt="icon">
+      <img src="a8.svg" alt="icon">
+      <img src="a9.svg" alt="icon">
+    </div>
+
+    <!-- main links -->
+    <div class="footer-center">
+      <a href="menu.html" class="footer-link highlight">
+        <img src="s21.svg" alt="Menu" class="footer-icon">
+        Menu
+      </a>
+
+      <a href="index.html" class="footer-link highlight">
+        <img src="s22.svg" alt="Home" class="footer-icon">
+        Home
+      </a>
+    </div>
+
+    <!-- Right side icons -->
+    <div class="footer-right">
+      <img src="a11.svg" alt="icon">
+      <img src="a12.svg" alt="icon">
+      <img src="a13.svg" alt="icon">
+      <img src="a14.svg" alt="icon">
+      <img src="a10.svg" alt="icon">
+      <img src="a18.svg" alt="icon">
+      <img src="a19.svg" alt="icon">
+      <img src="a20.svg" alt="icon">
+    </div>
+
+  </div>
+</footer>
+</div></div>
+
 </body>
 </html>
+<!-- updated with svg and footer with font colors change and borders-->
+
