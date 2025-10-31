@@ -89,6 +89,7 @@
 
     <button id="clear">Wipe</button>
     <button id="theme">Theme</button>
+    <button id="menu">Menu</button>
   </header>
 
   <main class="canvas-area">
@@ -137,7 +138,7 @@
 
     canvas.addEventListener("mousedown", startDrawing);
     canvas.addEventListener("mouseup", stopDrawing);
-    canvas.addEventListener("mousemove", draw);
+    canvas.addEventListener("mousemove", draw); 
 
     document.getElementById("clear").addEventListener("click", () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -146,6 +147,12 @@
     document.getElementById("theme").addEventListener("click", () => {
       window.location.href = "theme.html";
     });
+    //Added menu.html
+    document.getElementById("menu").addEventListener("click", () => {
+      window.location.href = "menu.html";
+    });
+
+
   </script>
 </body>
 </html>
